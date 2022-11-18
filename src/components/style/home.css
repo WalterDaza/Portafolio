@@ -4,7 +4,7 @@
 }
 
 .section_home {
-    background-image: url("/src/components/utils/wa.gif");
+    background-image: url("/src/utils/wa.gif");
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;

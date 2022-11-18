@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import "../utils/pokeapi.png"
 
 const Portafolio = ({portafolio}) => {
 
@@ -45,6 +46,7 @@ const Portafolio = ({portafolio}) => {
         </div>
       <button onClick={handleNext} className='slider_next'><i className='bx bxs-chevrons-right slider_icon'></i></button>
       </div>
+      <img src="./utils/pokeapi.png" alt="" />
       </div>
   )
 }

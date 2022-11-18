@@ -12,7 +12,7 @@ useEffect(() => {
 
   return (
     <div className='habilidades_container'>
-      <h1  data-aos="fade-up" className='habilidades_title'>H a b i l i d a d e s</h1>
+      <h1  data-aos="fade-up" className='habilidades_title'>H A B I L I D A D E S</h1>
       <div className='icons_container'>
       {
         hability.map(hability => (

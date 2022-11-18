@@ -9,7 +9,8 @@ import "./style/habilidades.css"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import hability from "./json/habilidades.json"
-import portafolio from './json/portafolio.json'
+import portafolioFront from './json/portafolioFront.json'
+import portafolioBack from './json/portafolioBack.json'
 import "./style/portafolio.css"
 
 function App() {
@@ -74,7 +75,8 @@ function App() {
 
       <section id='portafolio' className='section_portafolio'>
         <Portafolio 
-        portafolio={portafolio}
+        portafolioFront={portafolioFront}
+        portafolioBack={portafolioBack}
         />
       </section>
 

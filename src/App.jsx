@@ -4,13 +4,13 @@ import Contacto from './components/Contacto'
 import Habilidades from './components/Habilidades'
 import Home from './components/Home'
 import Portafolio from './components/Portafolio'
-import "./components/style/home.css"
-import "./components/style/habilidades.css"
+import "./style/home.css"
+import "./style/habilidades.css"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import hability from "./components/json/habilidades.json"
-import portafolio from './components/json/portafolio.json'
-import "./components/style/portafolio.css"
+import hability from "./json/habilidades.json"
+import portafolio from './json/portafolio.json'
+import "./style/portafolio.css"
 
 function App() {
 

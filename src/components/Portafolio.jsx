@@ -33,12 +33,10 @@ const Portafolio = ({portafolio}) => {
           <div style={{transform: `translateX(calc(-${indexImg} / 4 * 100%))`}} className='slider_move'>
             {
               portafolio.map(url => (
-                <>
-                <div key={url.name} className='slider_img_container'>
+                <div key={url.url} className='slider_img_container'>
                   <a href={url.url}><img className='slider_img' src={url.img}/></a>
                   <div className='slider_name' ><h1>{url.name}</h1><p>{url.description}</p><a href={url.url}><i className='bx bx-show-alt img_icon' ></i></a></div>
                 </div>
-                </>
               ))
             }
   
@@ -46,7 +44,6 @@ const Portafolio = ({portafolio}) => {
         </div>
       <button onClick={handleNext} className='slider_next'><i className='bx bxs-chevrons-right slider_icon'></i></button>
       </div>
-      <img src="./utils/pokeapi.png" alt="" />
       </div>
   )
 }

@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Javascript",
+        "img": "javascript",
+        "color": "javascript"
+    },
+    {
+        "name": "HTML5",
+        "img": "html5",
+        "color": "html5"
+    },
+    {
+        "name": "CSS3",
+        "img": "css3",
+        "color": "css3"
+    },
+    {
+        "name": "React JS",
+        "img": "react",
+        "color": "react"
+    },
+    {
+        "name": "Redux",
+        "img": "redux",
+        "color": "redux"
+    },
+    {
+        "name": "Node JS",
+        "img": "nodejs",
+        "color": "nodejs"
+    },
+    {
+        "name": "Postgresql",
+        "img": "postgresql",
+        "color": "postgresql"
+    },
+    {
+        "name": "Github",
+        "img": "github",
+        "color": "github"
+    },
+    {
+        "name": "Netlify",
+        "img": "netlify",
+        "color":"netlify"
+    }
+]

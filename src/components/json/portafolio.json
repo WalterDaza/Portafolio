@@ -12,12 +12,12 @@
     },
     {
         "name": "Users CRUD",
-        "img" : "/src/utils/userscrud.png",
+        "img" : "./src/utils/userscrud.png",
         "url" : "https://waldaz-usercrud.netlify.app"
     },
     {
         "name": "Wheater App",
-        "img" : "/src/utils/wheaterapp.png", 
+        "img" : "../src/utils/wheaterapp.png", 
         "url" : "https://wheaterappwaldaz.netlify.app"
     }
 ]

@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import "../utils/pokeapi.png"
+import AOS from "aos"
 
 const Portafolio = ({portafolioFront, portafolioBack}) => {
 
+  useEffect(() => {
+    AOS.init({ duration: 2500 });
+  }, [])
   // console.log(portafolio)
 
   const [indexImgFront, setIndexImgFront] = useState(0)
 
   const handlePrevFront = () => {
-    if(indexImg - 1 < 0){
+    if(indexImgFront - 1 < 0){
       setIndexImgFront(portafolioFront.length - 1)
     } else {
       setIndexImgFront(indexImgFront - 1)
@@ -28,7 +32,7 @@ const Portafolio = ({portafolioFront, portafolioBack}) => {
   const [indexImgBack, setIndexImgBack] = useState(0)
 
   const handlePrevBack = () => {
-    if(indexImg - 1 < 0){
+    if(indexImgBack - 1 < 0){
       setIndexImgBack(portafolioBack.length - 1)
     } else {
       setIndexImgBack(indexImgBack - 1)
@@ -44,9 +48,9 @@ const Portafolio = ({portafolioFront, portafolioBack}) => {
   }
   return (
     <div className='portafolio_container'>
-      <h1 className='habilidades_title'>P O R T A F O L I O</h1>
-      <h2 className='habilidades_subtitle'> F r o n t - e n d</h2>
-      <div className='slider'>
+      <h1 data-aos="fade-up" className='habilidades_title'>P O R T A F O L I O</h1>
+      <h2  data-aos="fade-up" className='habilidades_subtitle'> F r o n t - e n d</h2>
+      <div data-aos="fade-down-left" className='slider'>
         <button onClick={handlePrevFront} className='slider_prev'><i className='bx bxs-chevrons-left slider_icon'></i></button>     
         <div className='slider_static'>
           <div style={{transform: `translateX(calc(-${indexImgFront} / 4 * 100%))`}} className='slider_move'>
@@ -65,15 +69,16 @@ const Portafolio = ({portafolioFront, portafolioBack}) => {
         </div>
       <button onClick={handleNextFront} className='slider_next'><i className='bx bxs-chevrons-right slider_icon'></i></button>
       </div>
-      <h2 className='habilidades_subtitle'> B a c k - e n d</h2>
       
-        <div className='slider'>
-        <button onClick={handlePrevBack} className='slider_prev'><i className='bx bxs-chevrons-left slider_icon'></i></button>     
+      <h2 data-aos="fade-up" className='habilidades_subtitle'> B a c k - e n d</h2>
+      
+        <div data-aos="fade-down-right" className='slider'>
+        <button  onClick={handlePrevBack} className='slider_prev'><i className='bx bxs-chevrons-left slider_icon'></i></button>     
         <div className='slider_static'>
           <div style={{transform: `translateX(calc(-${indexImgBack} / 4 * 100%))`}} className='slider_move'>
             {
               portafolioBack.map(url => (
-                <div key={url.url} className='slider_img_container'>
+                <div key={url.name} className='slider_img_container'>
                   <a href={url.url}><img className='slider_img' src={url.img}/></a>
                   <div className='slider_img_description' >
                     <h1 className='slider_img_title'>{url.name}</h1><p className='slider_img_parrafo'>{url.description}</p><a href={url.url}>

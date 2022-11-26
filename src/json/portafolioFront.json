@@ -1,25 +1,25 @@
 [
     {
         "name": "Pokedex",
-        "img" : "/public/utils/userscrud.png",
+        "img" : "/utils/userscrud.png",
         "url" : "https://pokeappi-waldaz.netlify.app",
         "description": "React / Axios / Redux / Router / Paginación / Hooks "
     },
     {
         "name": "Users CRUD",
-        "img" : "/public/utils/userscrud.png",
+        "img" : "/utils/userscrud.png",
         "url" : "https://waldaz-usercrud.netlify.app",
         "description": "Reeact / Axios / Hook-Form / CRUD's / Hooks "
     },
     {
         "name": "Rick And Morty Api",
-        "img" : "/public/utils/userscrud.png",
+        "img" : "/utils/userscrud.png",
         "url" : "https://waldaza-rickandmorty.netlify.app",
         "description": "React / Axios / Hooks "
     },
     {
         "name": "Wheater App",
-        "img" : "/public/utils/userscrud.png", 
+        "img" : "/utils/userscrud.png", 
         "url" : "/public/utils/userscrud.png",
         "description": "React / Axios / Hooks "
     }

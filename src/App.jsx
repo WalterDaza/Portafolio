@@ -12,6 +12,7 @@ import hability from "./json/habilidades.json"
 import portafolioFront from './json/portafolioFront.json'
 import portafolioBack from './json/portafolioBack.json'
 import "./style/portafolio.css"
+import "./style/contacto.css"
 
 function App() {
 
@@ -83,7 +84,6 @@ function App() {
       <section id='contacto' className='section_contacto'>
         <Contacto />
       </section>
-
     </div>
   )
 }

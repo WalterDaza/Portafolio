@@ -1,0 +1,10 @@
+.section_contacto{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(#194658, #0e455c,#022a3b );
+    box-shadow:
+    inset 26px 26px 40px -1px #002535,
+    inset -26px -26px 40px -1px #002535;
+}

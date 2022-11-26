@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
-import "../utils/pokeapi.png"
+import "../../public/utils/pokeapi.png"
 import AOS from "aos"
 
 const Portafolio = ({portafolioFront, portafolioBack}) => {
